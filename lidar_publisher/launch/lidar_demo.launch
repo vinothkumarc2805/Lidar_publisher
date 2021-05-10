@@ -1,0 +1,12 @@
+<!-- 
+	Name: demo.launch
+	Author: Vinay (me@vnay.in)
+	Description: Launch file to run a demo lidar_publisher node.
+		Also publishes a static tf transform with link name: lidar_publisher
+-->
+<launch>
+	<!-- Start a dummy lidar publisher node -->
+	<node name="lidar_publisher" pkg="lidar_publisher" type="lidar_publisher_node" output="screen" />
+	<!-- publish static tf	1m above base_frame and no rotations. -->
+	<node pkg="tf" type="static_transform_publisher" name="lidar_tf" args="0 0 1 0 0 0 1 base_link lidar_frame 50" />
+</launch>
