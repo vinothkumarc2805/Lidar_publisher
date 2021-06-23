@@ -1,6 +1,5 @@
 <!-- 
 	Name: demo.launch
-	Author: Vinay (me@vnay.in)
 	Description: Launch file to run a demo lidar_publisher node.
 		Also publishes a static tf transform with link name: lidar_publisher
 -->
