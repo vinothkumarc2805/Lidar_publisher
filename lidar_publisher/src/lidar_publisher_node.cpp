@@ -1,7 +1,5 @@
 /*
 ROS node to publish dummy lidar data.
-
-Author: Vinay (me@vnay.in)
 */
 
 #include <ros/ros.h>
